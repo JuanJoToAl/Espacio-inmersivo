@@ -1,6 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "devkit_bh9v")(type "KiCad")(uri "${KIPRJMOD}/Componentes PCB/Portabatería")(options "")(descr ""))
-  (lib (name "devkit_st5,08")(type "KiCad")(uri "${KIPRJMOD}/Componentes PCB/Terminal de tornillo_motor")(options "")(descr ""))
-  (lib (name "devkit_esp32")(type "KiCad")(uri "${KIPRJMOD}/Componentes PCB/ESP  WROOM 32")(options "")(descr ""))
-)
