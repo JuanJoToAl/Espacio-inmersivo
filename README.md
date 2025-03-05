@@ -133,7 +133,7 @@ https://github.com/user-attachments/assets/f787885c-6999-43d3-8214-14c2c1815ee7
 ![image](https://github.com/user-attachments/assets/1476a735-9a4c-43d8-b249-0c2c699c8937)
 
 ### Fotografías de la PCB fabricada
-
+https://github.com/user-attachments/assets/73bcb2f3-013d-4cea-b828-6a951bb66e76
 
 ### Imagen de la PCB con componentes soldados
 
