@@ -31,21 +31,12 @@ Inmersion, experiencia, automatizacion
 
 
 
-## La problemática
+### La problemática
+### La solución planteada (los módulos usados)
+### El criterio que tuvo para las decisiones tomadas
+### El funcionamiento del proyecto desde el punto de vista del usuario
 
 
-
-## La solución planteada (los módulos usados)
-
-
-
-## El criterio que tuvo para las decisiones tomadas
-
-
-
-## El funcionamiento del proyecto desde el punto de vista del usuario
-
-Los telones presentan una imagen proyectada con la sensacion de visualizacion en 3D que tiene relacion con y permiten el recorrido "a travez de su espacio" por medio de un sensor el cual al sentir la mano cercana, abre paso a otra imagen representada en 3D 
 
 ## Recomendaciones y conclusiones
 
@@ -56,7 +47,7 @@ Los telones presentan una imagen proyectada con la sensacion de visualizacion en
 
 
 ## Problemática
-
+La problemática o dilema central de un espacio inmersivo basado en experiencias naturales es conciliar su doble impacto: en lo individual, busca provocar reflexión mediante la inclusión activa del usuario; en lo global, pretende redefinir el rol del espectador como eje indispensable para completar la obra.
 
 
 ## Objetivos
@@ -171,7 +162,6 @@ El proyecto puede influir en pequeña escala a la gente que sea testigo o partic
 
 
 # Evidencias (Página 7):
-
 
 
 ## Puede subir información sobre el proceso de integración y de ensamble de cada cosa que sea relevante para el grupo por ejemplo, aquellas cosas que no funcionaron o se dañaron, aquellas cosas que fueron 
