@@ -72,6 +72,7 @@ El proyecto puede influir en pequeña escala a la gente que sea testigo o partic
 
 
 ## Diagramas de caja negra (abstractos)
+La siguiente imagen muestra un diagrama de caja negra sobre el proyecto. 
 ![Diagrama de caja negra](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20caja%20negra.png)
 
 
@@ -80,6 +81,7 @@ El proyecto puede influir en pequeña escala a la gente que sea testigo o partic
 
 
 ## Diagrama de flujo general del proyecto (cómo interactúa con el usuario final)
+El sieguiente diagrama de flujo expone el proceso de interación del usuario final con el proyecto.
 ![Diagrama de flujo general del proyecto](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20flujo%20general%20del%20proyecto.png)
 
 
@@ -117,8 +119,11 @@ El proyecto puede influir en pequeña escala a la gente que sea testigo o partic
 
 
 ## Diseño corte 3D o corte láser
+Para la fabricación de la estructura de madera MDF se utilizó el diseño expuesto a continuación
+![Diseño para corte láser](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Dise%C3%B1o%20para%20corte%20l%C3%A1ser.jpg)
 
-
+En la siguiente imagen se muestra una versión a escala reducira de la estructura en madera realizada. Esta se usó para ajustar medidas y pruebas de funcionamiento.
+![Diseño para corte láser](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Dise%C3%B1o%20para%20corte%20l%C3%A1ser.jpg)
 
 ## Evidencias de implementación (imágenes, vídeos)
 
@@ -129,9 +134,6 @@ El proyecto puede influir en pequeña escala a la gente que sea testigo o partic
 
 
 ## Simulaciones según haya sido necesario (opcional)
-
-
-
 ## Imágenes sobre los diseños creados (papel/tablero) sobre las tecnologías a usar
 
 
