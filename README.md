@@ -150,7 +150,7 @@ https://github.com/user-attachments/assets/f787885c-6999-43d3-8214-14c2c1815ee7
 
 ## Diseño de PCB layout (imagen del ruteo)
 
-![image](https://github.com/user-attachments/assets/0b11ef7d-7b8a-4763-bbe8-5ffb4387e404)
+![Diseño de PCB layout](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/WhatsApp%20Image%202025-03-05%20at%2012.17.34%20AM.jpeg)
 
 ## Imagen PNG en 3D del diseño final de la PCB
 
