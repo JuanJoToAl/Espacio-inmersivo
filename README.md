@@ -66,7 +66,7 @@ La siguiente imagen muestra un diagrama de caja negra sobre el proyecto.
 
 ## Diagrama de flujo general del proyecto (cómo interactúa con el usuario final)
 El sieguiente diagrama de flujo expone el proceso de interación del usuario final con el proyecto.
-![Diagrama de flujo general del proyecto](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20flujo%20general%20del%20proyecto.png)
+
 
 
 ## Impacto ambiental y acciones propuestas de mitigación
