@@ -11,13 +11,10 @@ Karina Guitierrez Cerquera
 Cristian Eduardo Robayo Martinez
 
 ## Descripción y/o Introducción
-
-La representacion grafica es de las formas pimigeneas mas reconocidas (sino es que la mas) de arte, sin embargo, aun hay mucho que explorar dentro del arte. 
-Se ha mantenido como el estandar que el espectador sea una entidad clinicamente independiente de la obra y viceversa, esto aunque mantiene el orden dentro de las representaciones, 
+El presente proyecto consiste en un **sistema automatizado para controlar cortinas** en un espacio inmersivo, utilizando un **ESP32** como núcleo de control, un **sensor ultrasónico** para detectar la proximidad de una persona y un **motor controlado por un puente H L293D** para mover las cortinas. Al acercarse la mano a menos de 10 cm del sensor, el sistema activa el motor para abrir o cerrar las cortinas, mientras una luz indicadora proporciona retroalimentación visual. Aunque enfrentamos desafíos como la gestión del tiempo y los costos de los componentes, el prototipo resultante demuestra cómo la tecnología puede crear interacciones intuitivas y funcionales en entornos inmersivos.
 
 ## Palabras clave
-
-Inmersion, experiencia, automatizacion, PCB
+Inmersion, experiencia, automatizacion, PCB.
 
 ## Poster o brochure
 
