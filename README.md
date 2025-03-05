@@ -143,8 +143,7 @@ https://github.com/user-attachments/assets/f787885c-6999-43d3-8214-14c2c1815ee7
 
 
 ## Fotografías de la PCB fabricada
-
-
+![Diagrama de flujo código](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20flujo%20c%C3%B3digo.png)
 
 ## Imagen de la PCB con componentes soldados
 
