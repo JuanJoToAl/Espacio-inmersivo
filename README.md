@@ -80,7 +80,7 @@ El proyecto puede influir en pequeña escala a la gente que sea testigo o partic
 
 
 ## Diagrama de flujo general del proyecto (cómo interactúa con el usuario final)
-![Diagrama de flujo general del proyecto](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20caja%20negra.png)
+![Diagrama de flujo general del proyecto](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20flujo%20general%20del%20proyecto.png)
 
 
 ## Impacto ambiental y acciones propuestas de mitigación
