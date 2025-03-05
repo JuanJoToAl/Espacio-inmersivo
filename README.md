@@ -17,7 +17,7 @@ Se ha mantenido como el estandar que el espectador sea una entidad clinicamente 
 
 ## Palabras clave
 
-Inmersion, experiencia, automatizacion
+Inmersion, experiencia, automatizacion, PCB
 
 ## Poster o brochure
 
@@ -35,20 +35,12 @@ Inmersion, experiencia, automatizacion
 ### La solución planteada (los módulos usados)
 ### El criterio que tuvo para las decisiones tomadas
 ### El funcionamiento del proyecto desde el punto de vista del usuario
-
-
-
 ## Recomendaciones y conclusiones
-
-
 
 # Contexto (Página 2)
 
-
-
 ## Problemática
 La problemática o dilema central de un espacio inmersivo basado en experiencias naturales es conciliar su doble impacto: en lo individual, busca provocar reflexión mediante la inclusión activa del usuario; en lo global, pretende redefinir el rol del espectador como eje indispensable para completar la obra.
-
 
 ## Objetivos
 
@@ -58,9 +50,7 @@ La problemática o dilema central de un espacio inmersivo basado en experiencias
 4.	Comprender el comportamiento del público para diseñar espacios que conecten con las personas y sus necesidades.
 5.	Fusionar arte y funcionalidad, generando productos que puedan adaptarse a diferentes ámbitos como la producción audiovisual, el marketing y el entretenimiento.
 
-
 ## Alcance
-
 El proyecto puede influir en pequeña escala a la gente que sea testigo o participante de la experiencia que dandole reflexion y regocijo dentro del hecho de su inclusion dentro de lo que representa y es la obra. Y en una escala mas global puede darle una vision fresca al mundo sobre la participacion del espectador dentro de una obra, dandole un papel mas influyente y necesario dentro de la obra, pues la ejecucion y muestra completa del objeto/obra se da a partir precisamente del usuario, 
 
 ## Ruta o roadmap o cronograma
@@ -68,17 +58,11 @@ El proyecto puede influir en pequeña escala a la gente que sea testigo o partic
 
 
 # Diseño de la solución (Página 3)
-
-
-
 ## Diagramas de caja negra (abstractos)
 La siguiente imagen muestra un diagrama de caja negra sobre el proyecto. 
 ![Diagrama de caja negra](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20caja%20negra.png)
 
-
 ## Diagramas tecnológicos
-
-
 
 ## Diagrama de flujo general del proyecto (cómo interactúa con el usuario final)
 El sieguiente diagrama de flujo expone el proceso de interación del usuario final con el proyecto.
