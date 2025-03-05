@@ -137,7 +137,7 @@ En la siguiente imagen se muestra una versión a escala reducira de la estructur
 ## Imágenes sobre los diseños creados (papel/tablero) sobre las tecnologías a usar
 El siguiente video muestra una versión en miniatura del espacio inmersivo. Este utiliza las tecnologías más básicas que hacen parte del funcionamiento del proyecto.
 
-https://github.com/user-attachments/assets/f25e09df-cbd9-4069-9ce3-3a1b50afc7f2
+https://github.com/user-attachments/assets/f787885c-6999-43d3-8214-14c2c1815ee7
 
 
 ## Diseño de PCB en KiCad (teniendo presente el siguiente contenido):
