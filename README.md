@@ -123,7 +123,7 @@ Para la fabricación de la estructura de madera MDF se utilizó el diseño expue
 ![Diseño para corte láser](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Dise%C3%B1o%20para%20corte%20l%C3%A1ser.jpg)
 
 En la siguiente imagen se muestra una versión a escala reducira de la estructura en madera realizada. Esta se usó para ajustar medidas y pruebas de funcionamiento.
-![Diseño para corte láser](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Dise%C3%B1o%20para%20corte%20l%C3%A1ser.jpg)
+![Diseño para corte láser](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Modelo%20reducido%20de%20estructura%20MDF.jpeg)
 
 ## Evidencias de implementación (imágenes, vídeos)
 
@@ -135,7 +135,9 @@ En la siguiente imagen se muestra una versión a escala reducira de la estructur
 
 ## Simulaciones según haya sido necesario (opcional)
 ## Imágenes sobre los diseños creados (papel/tablero) sobre las tecnologías a usar
+El siguiente video muestra una versión en miniatura del espacio inmersivo. Este utiliza las tecnologías más básicas que hacen parte del funcionamiento del proyecto.
 
+https://github.com/user-attachments/assets/f25e09df-cbd9-4069-9ce3-3a1b50afc7f2
 
 
 ## Diseño de PCB en KiCad (teniendo presente el siguiente contenido):
