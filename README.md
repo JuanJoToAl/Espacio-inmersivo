@@ -72,7 +72,7 @@ El proyecto puede influir en pequeña escala a la gente que sea testigo o partic
 
 
 ## Diagramas de caja negra (abstractos)
-
+![Diagrama de caja negra](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20caja%20negra.png)
 
 
 ## Diagramas tecnológicos
@@ -80,12 +80,37 @@ El proyecto puede influir en pequeña escala a la gente que sea testigo o partic
 
 
 ## Diagrama de flujo general del proyecto (cómo interactúa con el usuario final)
-
+![Diagrama de flujo general del proyecto](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20caja%20negra.png)
 
 
 ## Impacto ambiental y acciones propuestas de mitigación
+---
+### **Impactos ambientales identificados**
 
+1. **Consumo energético de los dispositivos electrónicos**:  
+   El uso de baterías recargables y componentes como el ESP32, el puente H y los proyectores implica un consumo constante de energía. Si la energía para recargar las baterías proviene de fuentes no renovables, se contribuye indirectamente a la emisión de gases de efecto invernadero. Además, las baterías mal gestionadas pueden convertirse en residuos peligrosos.
 
+2. **Generación de residuos electrónicos**:  
+   Los componentes electrónicos (ESP32, sensores, PCB, motores) tienen una vida útil limitada y pueden convertirse en residuos tóxicos si no se gestionan adecuadamente. Su fabricación también consume recursos no renovables y energía, generando un impacto ambiental significativo.
+
+3. **Uso de materiales no reciclables o de difícil reciclaje**:  
+   Algunos materiales adicionales (pinturas, adhesivos, cables, plásticos) pueden ser difíciles de reciclar o contener sustancias químicas dañinas. Si no se gestionan correctamente, pueden terminar en vertederos, contaminando suelos y fuentes de agua.
+
+### **Acciones propuestas de mitigación:**
+
+1. **Energía renovable y eficiencia**:  
+   - Usar baterías recargables de larga duración y cargarlas con energía solar o renovable.  
+   - Implementar sistemas de bajo consumo, como sensores que se activen solo con presencia humana.  
+
+2. **Gestión de residuos electrónicos**:  
+   - Establecer un plan de reciclaje para baterías y componentes electrónicos, llevándolos a centros especializados.  
+   - Reutilizar o donar componentes en buen estado al finalizar el proyecto.  
+
+3. **Selección de materiales sostenibles**:  
+   - Optar por materiales reciclables o biodegradables en la construcción de arcos y estructuras.  
+   - Evitar pinturas o adhesivos tóxicos, prefiriendo alternativas ecológicas.  
+
+---
 
 # Diseño e implementación del case (página 4)
 
