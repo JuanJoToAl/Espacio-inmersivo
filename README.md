@@ -66,8 +66,7 @@ La siguiente imagen muestra un diagrama de caja negra sobre el proyecto.
 
 ## Diagrama de flujo general del proyecto (cómo interactúa con el usuario final)
 El sieguiente diagrama de flujo expone el proceso de interación del usuario final con el proyecto.
-
-
+![Diagrama de flujo general del proyecto](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20flujo%20c%C3%B3digo.png)
 
 ## Impacto ambiental y acciones propuestas de mitigación
 ---
@@ -98,9 +97,7 @@ El sieguiente diagrama de flujo expone el proceso de interación del usuario fin
 
 ---
 
-# Diseño e implementación del case (página 4)
-
-
+# Diseño e implementación del case 
 
 ## Diseño corte 3D o corte láser
 Para la fabricación de la estructura de madera MDF se utilizó el diseño expuesto a continuación
@@ -112,10 +109,7 @@ En la siguiente imagen se muestra una versión a escala reducira de la estructur
 ## Evidencias de implementación (imágenes, vídeos)
 
 
-
-# Diseño e implementación electrónica (página 5)
-
-
+# Diseño e implementación electrónica 
 
 ## Simulaciones según haya sido necesario (opcional)
 ## Imágenes sobre los diseños creados (papel/tablero) sobre las tecnologías a usar
@@ -123,42 +117,46 @@ El siguiente video muestra una versión en miniatura del espacio inmersivo. Este
 
 https://github.com/user-attachments/assets/f787885c-6999-43d3-8214-14c2c1815ee7
 
+## Diseño de PCB en KiCad:
 
-## Diseño de PCB en KiCad (teniendo presente el siguiente contenido):
-
-
-
-## Diseño esquemático del circuito en pdf y png
+### Diseño esquemático del circuito en pdf y png
 
 (en los archivos subidos)
 
-## Diseño de PCB layout (imagen del ruteo)
+### Diseño de PCB layout (imagen del ruteo)
 
 ![Diseño de PCB layout](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Dise%C3%B1o%20de%20PCB%20layout.jpg)
 
-## Imagen PNG en 3D del diseño final de la PCB
+### Imagen PNG en 3D del diseño final de la PCB
 ![image](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Dise%C3%B1o%203D%20PCB.jpg)
 ![image](https://github.com/user-attachments/assets/1f7ba6ad-88ac-49fa-b2e7-b8a6796c3d92)
 ![image](https://github.com/user-attachments/assets/1476a735-9a4c-43d8-b249-0c2c699c8937)
 
-
-## Fotografías de la PCB fabricada
-![Diagrama de flujo código](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20flujo%20c%C3%B3digo.png)
-
-## Imagen de la PCB con componentes soldados
+### Fotografías de la PCB fabricada
 
 
+### Imagen de la PCB con componentes soldados
 
-## Imagen de la PCB con los sensores, actuadores y demás componentes interconectados
-
-
-
-# Diseño e implementación de software (Página 6):
+### Imagen de la PCB con los sensores, actuadores y demás componentes interconectados
 
 
+# Diseño e implementación de software 
 
 ## Diagrama(s) de flujo sobre las diferentes tareas que realiza el proyecto (A nivel de la solución)
-
+```mermaid
+stateDiagram-v2
+    [*] --> Inicio
+    Inicio --> LeerDistancia: Iniciar bucle
+    LeerDistancia --> CompararDistancia: Obtener distancia del sensor ultrasónico
+    CompararDistancia --> ManoDetectada: distancia <= 10 cm
+    CompararDistancia --> ManoNoDetectada: distancia > 10 cm
+    ManoDetectada --> ActivarMotor: Activar motor para mover cortinas
+    ActivarMotor --> RecogerCortinas: Recoger cortinas durante 5 segundos
+    RecogerCortinas --> Esperar: Esperar 1 segundo
+    Esperar --> ExtenderCortinas: Extender cortinas durante 5 segundos
+    ExtenderCortinas --> [*]: Volver al inicio del bucle
+    ManoNoDetectada --> [*]: Volver al inicio del bucle
+```
 
 
 ## Código sobre las diferentes pruebas unitarias de sensores y actuadores
@@ -166,14 +164,85 @@ https://github.com/user-attachments/assets/f787885c-6999-43d3-8214-14c2c1815ee7
 
 
 ## Diagramas o código explicado sobre el cómo interactúa con otras interfaces
+```python
+# platform: micropython-esp32
+# send: wifi
+# ip_mpy: 192.168.4.1
+# serialport: 
+# filename: main.py
 
+from machine import Pin
+from machine import ADC
+from time import sleep
+from hcsr04 import HCSR04
 
+# Configuración del sensor ultrasónico (HCSR04)
+# - trigger_pin: Pin de salida para enviar el pulso ultrasónico.
+# - echo_pin: Pin de entrada para recibir el eco del pulso.
+# - echo_timeout_us: Tiempo máximo para esperar el eco (en microsegundos).
+sensor = HCSR04(trigger_pin=5, echo_pin=18, echo_timeout_us=30000)
+
+# Configuración de pines para controlar el puente H L293D
+# - en: Habilita el puente H (activar/desactivar el motor).
+# - tran1 y tran2: Controlan la dirección del motor.
+en = Pin(13, Pin.OUT)
+tran1 = Pin(22, Pin.OUT)
+tran2 = Pin(23, Pin.OUT)
+
+# Configuración del pin para controlar una luz (LED)
+luz = Pin(2, Pin.OUT)
+
+# Función para medir la distancia con el sensor ultrasónico
+def distancia():
+    distance = sensor.distance_cm()  # Obtiene la distancia en centímetros
+    return distance
+
+# Función para mover el motor hacia adelante
+def adelante(en, tran1, tran2):
+    en.value(1)   # Habilita el puente H
+    tran1.value(1)  # Activa el pin 1 del puente H
+    tran2.value(0)  # Desactiva el pin 2 del puente H
+
+# Función para mover el motor hacia atrás
+def atras(en, tran1, tran2):
+    en.value(1)   # Habilita el puente H
+    tran1.value(0)  # Desactiva el pin 1 del puente H
+    tran2.value(1)  # Activa el pin 2 del puente H
+
+# Función para detener el motor
+def quieto(en, tran1, tran2):
+    en.value(1)   # Habilita el puente H
+    tran1.value(0)  # Desactiva ambos pines del puente H
+    tran2.value(0)
+
+# Bucle principal del programa
+while True:
+    # Medir la distancia con el sensor ultrasónico
+    distanciasaurio = distancia()
+    print("Distancia: {:.2f} cm".format(distanciasaurio))
+
+    # Si el objeto está a menos de 5 cm, activar el motor y la luz
+    if distanciasaurio > 0 and distanciasaurio < 5:
+        luz.value(1)  # Encender la luz
+        adelante(en, tran1, tran2)  # Mover el motor hacia adelante
+        sleep(5)  # Esperar 5 segundos
+        quieto(en, tran1, tran2)  # Detener el motor
+        sleep(1)  # Esperar 1 segundo
+        atras(en, tran1, tran2)  # Mover el motor hacia atrás
+        sleep(5)  # Esperar 5 segundos
+    else:
+        # Si no hay objeto cerca, apagar la luz y detener el motor
+        luz.value(0)  # Apagar la luz
+        quieto(en, tran1, tran2)  # Detener el motor
+
+    sleep(5)  # Esperar 5 segundos antes de repetir el bucle
+```
 
 ## Otros códigos y plataformas usadas (NodeJS, Appinventor, etc).
 
 
 
-# Evidencias (Página 7):
+# Evidencias 
 
 
 ## Puede subir información sobre el proceso de integración y de ensamble de cada cosa que sea relevante para el grupo por ejemplo, aquellas cosas que no funcionaron o se dañaron, aquellas cosas que fueron 
@@ -181,16 +250,21 @@ descubrimientos, aciertos o desaciertos.
 
 
 
-## Conclusiones y recomendaciones futuras (Página 8)
-
-
+# Conclusiones y recomendaciones futuras
 
 ## Conclusiones
-
+El presente proyecto de control de cortinas con sensor ultrasónico y ESP32 demostró ser una solución innovadora y funcional para automatizar espacios inmersivos. Aunque logramos integrar correctamente los componentes (sensor, motor, luz y ESP32) y el código funcionó como esperábamos, enfrentamos desafíos significativos. Por un lado, el tiempo fue un factor limitante, lo que nos obligó a optimizar el desarrollo y las pruebas. Por otro, el costo del hardware, especialmente el puente H L293D y el ESP32, resultó más elevado de lo previsto. A pesar de estos obstáculos, el proyecto cumplió su objetivo y nos dejó valiosas lecciones sobre integración de hardware y software, así como sobre la importancia de una planificación eficiente.
 
 
 ## Recomendaciones para trabajos futuros
+Para las personas que quieran replicar el presente proyecto se tienen las siguientes recomendaciones. Esto para que se pueda obtener un resultado de alta calidad según sus necesidades
+1. **Optimización de componentes**:
+   - Explorar alternativas más económicas para algunos componentes, como sensores ultrasónicos o motores, sin sacrificar la calidad. Esto puede ayudar a reducir costos en futuras iteraciones del proyecto.
 
+2. **Integración con interfaces adicionales**:
+   - Considerar agregar una interfaz de control remoto, como una aplicación móvil, para manejar las cortinas de manera más versátil y mejorar la experiencia del usuario.
 
+3. **Mejora en la eficiencia energética**:
+   - Implementar un modo de bajo consumo cuando el sistema no esté en uso activo, lo que prolongaría la vida útil de las baterías y haría el proyecto más sostenible.
 
 ## Referentes (Referencias sobre inspiraciones, códigos base o documentación consultada relevante)
