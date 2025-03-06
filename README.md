@@ -1,11 +1,7 @@
-# Pagina 1
-
 ## Título del proyecto
-
 Espacio Inmersivo
 
 ## Integrantes
-
 Juan Jose Tobar Alvarez
 Karina Guitierrez Cerquera
 Cristian Eduardo Robayo Martinez
@@ -125,7 +121,7 @@ https://github.com/user-attachments/assets/f787885c-6999-43d3-8214-14c2c1815ee7
 ![Diseño de PCB layout](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Archivos%20dise%C3%B1o%20e%20implementaci%C3%B3n%20electr%C3%B3nica/Dise%C3%B1o%20de%20PCB%20layout.jpg)
 
 ### Imagen PNG en 3D del diseño final de la PCB
-![image](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Dise%C3%B1o%203D%20PCB.jpg)
+![image](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Archivos%20dise%C3%B1o%20e%20implementaci%C3%B3n%20electr%C3%B3nica/Dise%C3%B1o%203D%20PCB.jpg)
 ![image](https://github.com/user-attachments/assets/1f7ba6ad-88ac-49fa-b2e7-b8a6796c3d92)
 ![image](https://github.com/user-attachments/assets/1476a735-9a4c-43d8-b249-0c2c699c8937)
 
