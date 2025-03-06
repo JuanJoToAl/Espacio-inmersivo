@@ -17,7 +17,7 @@ El presente proyecto consiste en un **sistema automatizado para controlar cortin
 Inmersion, experiencia, automatizacion, PCB.
 
 ## Poster o brochure
-
+![Poster del proyecto]
 
 
 ## Imagen tipo banner de la implementación del proyecto (resultado final)
