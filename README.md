@@ -98,7 +98,7 @@ El sieguiente diagrama de flujo expone el proceso de interación del usuario fin
 
 ## Diseño corte 3D o corte láser
 Para la fabricación de la estructura de madera MDF se utilizó el diseño expuesto a continuación
-![Diseño para corte láser](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Dise%C3%B1o%20para%20corte%20l%C3%A1ser.jpg)
+![Diseño para corte láser](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Archivos%20dise%C3%B1o%20e%20implemensaci%C3%B3n%20del%20case/Dise%C3%B1o%20para%20corte%20l%C3%A1ser.jpg)
 
 En la siguiente imagen se muestra una versión a escala reducira de la estructura en madera realizada. Esta se usó para ajustar medidas y pruebas de funcionamiento.
 ![Diseño para corte láser](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Modelo%20reducido%20de%20estructura%20MDF.jpeg)
