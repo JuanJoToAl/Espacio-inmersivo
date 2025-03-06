@@ -57,7 +57,7 @@ El proyecto puede influir en pequeña escala a la gente que sea testigo o partic
 # Diseño de la solución (Página 3)
 ## Diagramas de caja negra (abstractos)
 La siguiente imagen muestra un diagrama de caja negra sobre el proyecto. 
-![Diagrama de caja negra](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Diagrama%20de%20caja%20negra.png)
+![Diagrama de caja negra](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Archivos%20dise%C3%B1o%20de%20la%20soluci%C3%B3n/Diagrama%20de%20caja%20negra.png)
 
 ## Diagramas tecnológicos
 
