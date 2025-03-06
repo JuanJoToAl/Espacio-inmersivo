@@ -122,7 +122,7 @@ https://github.com/user-attachments/assets/f787885c-6999-43d3-8214-14c2c1815ee7
 
 ### Diseño de PCB layout (imagen del ruteo)
 
-![Diseño de PCB layout](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Dise%C3%B1o%20de%20PCB%20layout.jpg)
+![Diseño de PCB layout](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Archivos%20dise%C3%B1o%20e%20implementaci%C3%B3n%20electr%C3%B3nica/Dise%C3%B1o%20de%20PCB%20layout.jpg)
 
 ### Imagen PNG en 3D del diseño final de la PCB
 ![image](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Dise%C3%B1o%203D%20PCB.jpg)
