@@ -17,7 +17,7 @@ El presente proyecto consiste en un **sistema automatizado para controlar cortin
 Inmersion, experiencia, automatizacion, PCB.
 
 ## Poster o brochure
-![Poster del proyecto]
+![Poster del proyecto](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Poster%20del%20proyecto/Poster%20espacio%20inmersivo.png)
 
 
 ## Imagen tipo banner de la implementación del proyecto (resultado final)
