@@ -144,6 +144,9 @@ https://github.com/user-attachments/assets/f787885c-6999-43d3-8214-14c2c1815ee7
 
 ### Imagen de la PCB con componentes soldados
 
+![Imagen de WhatsApp 2025-03-07 a las 14 42 08_c438ec0c](https://github.com/user-attachments/assets/52a285a0-23ac-45c2-a6f6-aaedc16bc1f4)
+
+![Imagen de WhatsApp 2025-03-07 a las 14 42 08_934c9abb](https://github.com/user-attachments/assets/0f56e7fd-fc2f-4cb3-94ad-f38ef4f17f61)
 
 
 ### Imagen de la PCB con los sensores, actuadores y demás componentes interconectados
