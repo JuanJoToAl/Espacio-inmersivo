@@ -31,13 +31,9 @@ Inmersion, experiencia, automatizacion, PCB.
 
 
 ### La problemática
-
 ### La solución planteada (los módulos usados)
-
 ### El criterio que tuvo para las decisiones tomadas
-
 ### El funcionamiento del proyecto desde el punto de vista del usuario
-
 ## Recomendaciones y conclusiones
 
 
@@ -45,6 +41,7 @@ Inmersion, experiencia, automatizacion, PCB.
 # Contexto (Página 2)
 
 ## Problemática
+
 La problemática o dilema central de un espacio inmersivo basado en experiencias naturales es conciliar su doble impacto: en lo individual, busca provocar reflexión mediante la inclusión activa del usuario; en lo global, pretende redefinir el rol del espectador como eje indispensable para completar la obra.
 
 ## Objetivos
@@ -71,12 +68,12 @@ La siguiente imagen muestra un diagrama de caja negra sobre el proyecto.
 
 ## Diagramas tecnológicos
 
-## Diagrama de flujo general del proyecto (cómo interactúa con el usuario final)
+### Diagrama de flujo general del proyecto (cómo interactúa con el usuario final)
 
 El sieguiente diagrama de flujo expone el proceso de interación del usuario final con el proyecto.
 ![Diagrama de flujo general del proyecto](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Archivos%20dise%C3%B1o%20de%20la%20soluci%C3%B3n/Diagrama%20flujo%20general%20del%20proyecto.png)
 
-## Impacto ambiental y acciones propuestas de mitigación
+### Impacto ambiental y acciones propuestas de mitigación
 ---
 ### **Impactos ambientales identificados**
 
@@ -150,6 +147,7 @@ https://github.com/user-attachments/assets/f787885c-6999-43d3-8214-14c2c1815ee7
 
 
 ### Imagen de la PCB con los sensores, actuadores y demás componentes interconectados
+
 
 
 # Diseño e implementación de software 
@@ -249,7 +247,6 @@ while True:
     # Activar señal si está muy cerca
   else:
     luz.value(0)  # Apagar señal 
-    quieto(en, tran1, tran2)
   sleep(1)
 ```
 
@@ -330,6 +327,7 @@ while True:
 ```
 
 # Evidencias 
+
 
 
 ## Puede subir información sobre el proceso de integración y de ensamble de cada cosa que sea relevante para el grupo por ejemplo, aquellas cosas que no funcionaron o se dañaron, aquellas cosas que fueron 
