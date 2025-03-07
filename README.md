@@ -2,8 +2,12 @@
 Espacio Inmersivo
 
 ## Integrantes
+
 Juan Jose Tobar Alvarez
+
+
 Karina Guitierrez Cerquera
+
 Cristian Eduardo Robayo Martinez
 
 ## Descripción y/o Introducción
