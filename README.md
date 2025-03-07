@@ -1,24 +1,26 @@
 ## Título del proyecto
-Espacio Inmersivo
+
+# Espacio Inmersivo
 
 ## Integrantes
 
 Juan Jose Tobar Alvarez
-
 
 Karina Guitierrez Cerquera
 
 Cristian Eduardo Robayo Martinez
 
 ## Descripción y/o Introducción
+
 El presente proyecto consiste en un **sistema automatizado para controlar cortinas** en un espacio inmersivo, utilizando un **ESP32** como núcleo de control, un **sensor ultrasónico** para detectar la proximidad de una persona y un **motor controlado por un puente H L293D** para mover las cortinas. Al acercarse la mano a menos de 10 cm del sensor, el sistema activa el motor para abrir o cerrar las cortinas, mientras una luz indicadora proporciona retroalimentación visual. Aunque enfrentamos desafíos como la gestión del tiempo y los costos de los componentes, el prototipo resultante demuestra cómo la tecnología puede crear interacciones intuitivas y funcionales en entornos inmersivos.
 
 ## Palabras clave
+
 Inmersion, experiencia, automatizacion, PCB.
 
 ## Poster o brochure
-![Poster del proyecto](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Poster%20del%20proyecto/Poster%20espacio%20inmersivo.png)
 
+![Poster del proyecto](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Poster%20del%20proyecto/Poster%20espacio%20inmersivo.png)
 
 ## Imagen tipo banner de la implementación del proyecto (resultado final)
 
@@ -29,10 +31,16 @@ Inmersion, experiencia, automatizacion, PCB.
 
 
 ### La problemática
+
 ### La solución planteada (los módulos usados)
+
 ### El criterio que tuvo para las decisiones tomadas
+
 ### El funcionamiento del proyecto desde el punto de vista del usuario
+
 ## Recomendaciones y conclusiones
+
+
 
 # Contexto (Página 2)
 
@@ -48,20 +56,23 @@ La problemática o dilema central de un espacio inmersivo basado en experiencias
 5.	Fusionar arte y funcionalidad, generando productos que puedan adaptarse a diferentes ámbitos como la producción audiovisual, el marketing y el entretenimiento.
 
 ## Alcance
-El proyecto puede influir en pequeña escala a la gente que sea testigo o participante de la experiencia que dandole reflexion y regocijo dentro del hecho de su inclusion dentro de lo que representa y es la obra. Y en una escala mas global puede darle una vision fresca al mundo sobre la participacion del espectador dentro de una obra, dandole un papel mas influyente y necesario dentro de la obra, pues la ejecucion y muestra completa del objeto/obra se da a partir precisamente del usuario, 
+El proyecto puede influir en pequeña escala individual e inmediata a la gente que sea testigo o participante de la experiencia que dandole reflexion y regocijo dentro del hecho de su inclusion dentro de lo que representa y es la obra. Y en una escala mas global puede darle una vision fresca al mundo sobre la participacion del espectador dentro de una obra, dandole un papel mas influyente y necesario dentro de la obra, pues la ejecucion y muestra completa del objeto/obra se da a partir precisamente del usuario, 
 
 ## Ruta o roadmap o cronograma
 
 
 
 # Diseño de la solución (Página 3)
+
 ## Diagramas de caja negra (abstractos)
+
 La siguiente imagen muestra un diagrama de caja negra sobre el proyecto. 
 ![Diagrama de caja negra](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Archivos%20dise%C3%B1o%20de%20la%20soluci%C3%B3n/Diagrama%20de%20caja%20negra.png)
 
 ## Diagramas tecnológicos
 
 ## Diagrama de flujo general del proyecto (cómo interactúa con el usuario final)
+
 El sieguiente diagrama de flujo expone el proceso de interación del usuario final con el proyecto.
 ![Diagrama de flujo general del proyecto](https://github.com/JuanJoToAl/Espacio-inmersivo/blob/main/Archivos%20dise%C3%B1o%20de%20la%20soluci%C3%B3n/Diagrama%20flujo%20general%20del%20proyecto.png)
 
@@ -131,9 +142,12 @@ https://github.com/user-attachments/assets/f787885c-6999-43d3-8214-14c2c1815ee7
 ![image](https://github.com/user-attachments/assets/1476a735-9a4c-43d8-b249-0c2c699c8937)
 
 ### Fotografías de la PCB fabricada
-https://github.com/user-attachments/assets/73bcb2f3-013d-4cea-b828-6a951bb66e76
+
+![image](https://github.com/user-attachments/assets/73bcb2f3-013d-4cea-b828-6a951bb66e76)
 
 ### Imagen de la PCB con componentes soldados
+
+
 
 ### Imagen de la PCB con los sensores, actuadores y demás componentes interconectados
 
@@ -159,7 +173,85 @@ stateDiagram-v2
 
 ## Código sobre las diferentes pruebas unitarias de sensores y actuadores
 
+Prueba motores
 
+```python
+# platform: micropython-esp32
+# send: wifi
+# ip_mpy: 192.168.4.1
+# serialport: 
+# filename: main.py
+
+from machine import Pin
+from time import sleep
+
+
+
+en= Pin(14, Pin.OUT)
+tran1= Pin(27, Pin.OUT)
+tran2= Pin(26, Pin.OUT)
+
+
+
+def adelante (en, tran1, tran2):
+    en.value(1)
+    tran1.value(1)
+    tran2.value(0)
+
+  
+def atras (en, tran1, tran2):
+    en.value(1)
+    tran1.value(0)
+    tran2.value(1)
+
+
+def quieto (en, tran1, tran2):
+    en.value(1)
+    tran1.value(0)
+    tran2.value(0)
+
+while True:
+  adelante(en,tran1,tran2)
+  sleep(5)
+  quieto(en,tran1,tran2)
+  sleep(1)
+  atras(en,tran1,tran2)
+  sleep(1)
+```
+
+Prueba ultrasonido
+
+```python
+# platform: micropython-esp32
+# send: wifi
+# ip_mpy: 192.168.4.1
+# serialport: 
+# filename: main.py
+
+from machine import Pin
+from machine import ADC
+from time import sleep
+from hcsr04 import HCSR04
+
+sensor = HCSR04(trigger_pin=13, echo_pin=12, echo_timeout_us=300000)
+
+luz = Pin(2, Pin.OUT)
+def distancia ():
+  distance = sensor.distance_cm()
+  return distance
+
+while True:
+  distanciasaurio = distancia()
+  print("Distancia: {:.2f} cm".format(distanciasaurio))
+  # Enviar señal según la cercanía del objeto
+  if distanciasaurio>0 and distanciasaurio < 10:
+    luz.value(1)
+    # Activar señal si está muy cerca
+  else:
+    luz.value(0)  # Apagar señal 
+    quieto(en, tran1, tran2)
+  sleep(1)
+```
 
 ## Diagramas o código explicado sobre el cómo interactúa con otras interfaces
 
@@ -237,10 +329,6 @@ while True:
     sleep(5)  # Esperar 5 segundos antes de repetir el bucle
 ```
 
-## Otros códigos y plataformas usadas (NodeJS, Appinventor, etc).
-
-
-
 # Evidencias 
 
 
@@ -252,6 +340,7 @@ descubrimientos, aciertos o desaciertos.
 # Conclusiones y recomendaciones futuras
 
 ## Conclusiones
+
 El presente proyecto de control de cortinas con sensor ultrasónico y ESP32 demostró ser una solución innovadora y funcional para automatizar espacios inmersivos. Aunque logramos integrar correctamente los componentes (sensor, motor, luz y ESP32) y el código funcionó como esperábamos, enfrentamos desafíos significativos. Por un lado, el tiempo fue un factor limitante, lo que nos obligó a optimizar el desarrollo y las pruebas. Por otro, el costo del hardware, especialmente el puente H L293D y el ESP32, resultó más elevado de lo previsto. A pesar de estos obstáculos, el proyecto cumplió su objetivo y nos dejó valiosas lecciones sobre integración de hardware y software, así como sobre la importancia de una planificación eficiente.
 
 
