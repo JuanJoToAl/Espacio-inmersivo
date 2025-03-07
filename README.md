@@ -117,7 +117,7 @@ En la siguiente imagen se muestra una versión a escala reducira de la estructur
 
 ![Imagen de WhatsApp 2025-03-06 a las 21 40 55_e7593a64](https://github.com/user-attachments/assets/9a047242-63ed-41d0-b5a1-14232835c218)
 
-
+![video]()
 
 # Diseño e implementación electrónica 
 
