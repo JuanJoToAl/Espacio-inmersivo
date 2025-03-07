@@ -102,6 +102,7 @@ En la siguiente imagen se muestra una versión a escala reducira de la estructur
 ## Evidencias de implementación (imágenes, vídeos)
 
 
+
 # Diseño e implementación electrónica 
 
 ## Simulaciones según haya sido necesario (opcional)
@@ -157,6 +158,7 @@ stateDiagram-v2
 
 
 ## Diagramas o código explicado sobre el cómo interactúa con otras interfaces
+
 ```python
 # platform: micropython-esp32
 # send: wifi
