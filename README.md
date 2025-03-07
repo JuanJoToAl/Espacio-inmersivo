@@ -113,6 +113,10 @@ En la siguiente imagen se muestra una versión a escala reducira de la estructur
 
 ## Evidencias de implementación (imágenes, vídeos)
 
+![Imagen de WhatsApp 2025-03-07 a las 15 10 58_4185896f](https://github.com/user-attachments/assets/dcccb273-d065-4341-8d6b-86298a88f95b)
+
+![Imagen de WhatsApp 2025-03-06 a las 21 40 55_e7593a64](https://github.com/user-attachments/assets/9a047242-63ed-41d0-b5a1-14232835c218)
+
 
 
 # Diseño e implementación electrónica 
